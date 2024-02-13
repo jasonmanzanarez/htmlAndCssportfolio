@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the English Test</h1>
+    </header>
+    <main>
+        <section id="testSection">
+            <div id="question1" class="question">
+                <h2>Question 1:</h2>
+                <p>What is the past tense of 'go'?</p>
+                <input type="text" class="answerInput">
+            </div>
+            <div id="question2" class="question" style="display: none;">
+                <h2>Question 2:</h2>
+                <p>What is the plural form of 'mouse'?</p>
+                <input type="text" class="answerInput">
+            </div>
+            <div id="question3" class="question" style="display: none;">
+                <h2>Question 3:</h2>
+                <p>Complete the sentence: 'If I ___ rich, I would travel the world.'</p>
+                <input type="text" class="answerInput">
+            </div>
+            <button onclick="changeQuestion(-1)">Previous</button>
+            <button onclick="changeQuestion(1)">Next</button>
+            <button onclick="displayResults()" style="display: none;" id="submitButton">Submit Test</button>
+            <p id="result"></p>
+        </section>
+    </main>
+    <footer>
+        <p>English Test Website © 2023</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
